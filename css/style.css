@@ -1,41 +1,41 @@
 @font-face {
-  font-family: 'Montserrat Bold';
+  font-family: 'Montserrat';
   src: url('../fonts/montserrat-bold.eot');
   src: url('../fonts/montserrat-bold.eot?#iefix') format('embedded-opentype'),
     url('../fonts/montserrat-bold.woff2') format('woff2'),
     url('../fonts/montserrat-bold.woff') format('woff'),
     url('../fonts/montserrat-bold.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Montserrat Medium';
+  font-family: 'Montserrat';
   src: url('../fonts/montserrat-medium.eot');
   src: url('../fonts/montserrat-medium.eot?#iefix') format('embedded-opentype'),
     url('../fonts/montserrat-medium.woff2') format('woff2'),
     url('../fonts/montserrat-medium.woff') format('woff'),
     url('../fonts/montserrat-medium.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Montserrat Regular';
+  font-family: 'Montserrat';
   src: url('../fonts/montserrat-regular.eot');
   src: url('../fonts/montserrat-regular.eot?#iefix') format('embedded-opentype'),
     url('../fonts/montserrat-regular.woff2') format('woff2'),
     url('../fonts/montserrat-regular.woff') format('woff'),
     url('../fonts/montserrat-regular.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Montserrat Semibold';
+  font-family: 'Montserrat';
   src: url('../fonts/montserrat-semibold.eot');
   src: url('../fonts/montserrat-semibold.eot?#iefix') format('embedded-opentype'),
     url('../fonts/montserrat-semibold.woff2') format('woff2'),
     url('../fonts/montserrat-semibold.woff') format('woff'),
     url('../fonts/montserrat-semibold.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
@@ -50,6 +50,7 @@
 }
 html {
   background-color: #FFFFFF;
+  font-size: 16px;
   color: #000000;
 }
 .main_container {
@@ -127,7 +128,7 @@ html {
   text-decoration: none;
 }
 .menu-item-text {
-  font-family: 'Montserrat Regular';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -320,9 +321,14 @@ html {
 }
 .partner {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   background-color: #3D50F9;
   border-radius: 30px;
+  margin-bottom: 155px;
+}
+.partner-columns-wrap {
+  display: flex;
+  justify-content: space-between;
 }
 .partner-description-column {
   width: 50%;
@@ -334,7 +340,8 @@ html {
   margin-bottom: 9px;
 }
 .partner-pre-header__text {
-  font-family: 'Montserrat Medium';
+  font-family: 'Montserrat';
+  font-weight: 500;
   font-size: 22px;
   color: #FFFFFF;
 }
@@ -343,16 +350,20 @@ html {
 }
 .partner-header__text {
   margin: 0;
-  font-family: 'Montserrat Bold';
+  font-family: 'Montserrat';
+  font-weight: 700;
   font-size: 50px;
+  line-height: 97%;
   color: #FFFFFF;
 }
 .partner-description {
   margin-bottom: 55px;
 }
 .partner-description__text {
-  font-family: 'Montserrat Regular';
+  font-family: 'Montserrat';
+  font-weight: 400;
   font-size: 24px;
+  line-height: 29px;
   color: #FFFFFF;
 }
 .orange-rounded {
@@ -367,8 +378,12 @@ html {
 .orange-rounded:hover {
   background-color: #FFA940;
 }
+.partner-button {
+  margin-bottom: 6vw;
+}
 .partner-button__text {
-  font-family: 'Montserrat Bold';
+  font-family: 'Montserrat';
+  font-weight: 700;
   font-size: 16px;
   color: #151824;
 }
@@ -392,8 +407,8 @@ html {
   position: absolute;
   width: 93px;
   height: 93px;
-  bottom: 55px;
-  left: -35px;
+  top: 290px;
+  left: -24px;
 }
 .patner-image__icon1-mask {
   width: 100%;
@@ -425,6 +440,8 @@ html {
   background: #FFFFFF;
   mask-image: url(../img/squircle2.svg);
   -webkit-mask-image: url(../img/squircle2.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   mask-size: contain;
   -webkit-mask-size: contain;
   display: flex;
@@ -436,6 +453,53 @@ html {
   background: center/contain no-repeat url(../img/handshake.svg);
   align-self: center;
 }
+.partner-button-wrap {
+  justify-content: center;
+  display: none;
+}
+@media screen and (max-width: 1250px) {
+  .container {
+    width: 95vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header__desktop {
+    margin-bottom: 6vw;
+  }
+  .partner-header {
+    margin-bottom: 3vw;
+  }
+  .partner-description {
+    margin-bottom: 5vw;
+  }
+  .partner-image {
+    width: 40vw;
+    height: 40vw;
+  }
+  .partner-picture-wrap {
+    margin: 6vw auto;
+  }
+  .patner-image__icon1,
+  .patner-image__icon2 {
+    width: 9vw;
+    height: 9vw;
+  }
+  .patner-image__icon1 {
+    top: 25vw;
+    left: -2.5vw;
+  }
+  .patner-image__icon2 {
+    top: 3.4vw;
+    right: 0.2vw;
+  }
+  .patner-image__icon1-image,
+  .patner-image__icon2-image {
+    width: 6vw;
+  }
+  .partner-description__wrap {
+    margin: 6vw 0 0 5vw;
+  }
+}
 @media screen and (max-width: 1119px) {
   .menu-hd {
     display: none;
@@ -444,6 +508,34 @@ html {
     margin: 18px 180px 18px 0;
   }
   .header-second-line {
+    display: flex;
+  }
+}
+@media screen and (max-width: 899px) {
+  .partner-pre-header__text {
+    font-size: 18px;
+  }
+  .partner-header__text {
+    font-size: 42px;
+  }
+  .partner-description__text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 699px) {
+  .partner-pre-header__text {
+    font-size: 16px;
+  }
+  .partner-header__text {
+    font-size: 34px;
+  }
+  .partner-description__text {
+    font-size: 18px;
+  }
+  .partner-button__col-left {
+    display: none;
+  }
+  .partner-button-wrap {
     display: flex;
   }
 }
@@ -469,6 +561,7 @@ html {
     overflow: hidden;
     position: absolute;
     top: 55px;
+    z-index: 150;
   }
   .mobile-menu-checkbox:checked ~ .menu-sd {
     visibility: visible;
@@ -517,5 +610,32 @@ html {
   .submenu-items .menu-items__item {
     margin-right: 20px;
     padding: 15px 0;
+  }
+  .partner-columns-wrap {
+    flex-direction: column;
+  }
+  .partner-description-column {
+    width: 100%;
+  }
+  .partner-image {
+    width: 55vw;
+    height: 55vw;
+  }
+  .patner-image__icon1,
+  .patner-image__icon2 {
+    width: 12.4vw;
+    height: 12.4vw;
+  }
+  .patner-image__icon1 {
+    top: 34.4vw;
+    left: -3.4vw;
+  }
+  .patner-image__icon2 {
+    top: 4.7vw;
+    right: 0.3vw;
+  }
+  .patner-image__icon1-image,
+  .patner-image__icon2-image {
+    width: 8.3vw;
   }
 }
