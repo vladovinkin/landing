@@ -120,18 +120,20 @@ html {
 }
 .menu-item-text {
   color: #000000;
-}
-.menu-item-text:hover {
-  color: #888888;
-}
-.menu-item-link {
-  text-decoration: none;
-}
-.menu-item-text {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
+}
+.menu-item-text:hover {
+  color: #888888;
+}
+.menu-items .menu-items__item:hover > .menu-item-link > .menu-item-text,
+.account-menu__lang-item:hover > .menu-item-link > .menu-item-text {
+  color: #888888;
+}
+.menu-item-link {
+  text-decoration: none;
 }
 .submenu-items {
   position: absolute;
@@ -644,6 +646,15 @@ html {
   .header-second-line {
     display: flex;
   }
+  .menu-sd {
+    margin-bottom: 0px;
+  }
+  .menu-items__item {
+    padding: 0 0 20px;
+  }
+  .submenu-items {
+    top: 35px;
+  }
   .become {
     padding: 9vw 8vw 10vw 7vw;
   }
@@ -739,6 +750,9 @@ html {
     position: absolute;
     top: 55px;
     z-index: 150;
+  }
+  .menu-items__item {
+    padding: 20px 0;
   }
   .mobile-menu-checkbox:checked ~ .menu-sd {
     visibility: visible;
