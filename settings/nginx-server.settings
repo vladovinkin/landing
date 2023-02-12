@@ -1,0 +1,32 @@
+server {
+        listen 80;
+
+        root /path/to/the/project/folder;
+        index index.php index.html index.htm;
+        server_name ispring-entry.task;
+
+        location / {
+		try_files $uri $uri/ /index.php?$query_string;
+        }
+
+	location ~* \.(jpeg|ico|jpg|gif|png|bmp|css|js|pdf|txt|tar|gz|wof|csv|zip|xml|yml|doc|rtf|swf|ppt|rar|zip|ttf|otf) {
+	    root /path/to/the/project/folder;
+	    access_log off;
+	    expires 30d;
+	    add_header Access-Control-Allow-Origin *;
+	    add_header Cache-Control public;
+	}
+
+        location ~ \.php$ {
+		root /path/to/the/project/folder;
+                include snippets/fastcgi-php.conf;
+                fastcgi_pass unix:/var/run/php/php8.0-fpm.sock;
+
+		fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+		include fastcgi_params;
+        }
+
+        location ~ /\.(ht|svn|git) {
+                deny all;
+        }
+}
