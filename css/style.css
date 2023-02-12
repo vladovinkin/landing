@@ -464,7 +464,6 @@ html {
   background-color: #2C3442;
   display: flex;
   justify-content: center;
-
 }
 .become-columns {
   display: flex;
@@ -472,6 +471,7 @@ html {
 }
 .become-column-offer {
   background: no-repeat url(./../img/rounded-octaedr.svg);
+  background-size: 231px 231px;
   width: 393px;
   height: auto;
   margin-right: 113px;
@@ -553,6 +553,13 @@ html {
   line-height: 24px;
   color: #3D3E47;
 }
+.become-form__agreement-text a {
+  color: #3D3E47;
+  transition: all .3s;
+}
+.become-form__agreement-text a:hover {
+  text-shadow: -1px 1px 2px #6d6f7c;
+}
 .become-form__submit-button {
   background: #3D50F9;
   border-radius: 10px;
@@ -631,6 +638,29 @@ html {
   .header-second-line {
     display: flex;
   }
+  .become {
+    padding: 9vw 8vw 10vw 7vw;
+  }
+  .become-column-offer {
+    background-size: 22vw 22vw;
+    width: 40%;
+    margin-right: 6vw;
+  }
+  .become-offer-wrap {
+    padding: 6vw 0 0 5vw;
+  }
+  .become-offer-title {
+    margin-bottom: 4vw;
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .become-offer-text {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .become-column-form {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 899px) {
   .partner-pre-header__text {
@@ -658,6 +688,26 @@ html {
   }
   .partner-button-wrap {
     display: flex;
+  }
+  .become {
+    padding: 6vw;
+  }
+  .become-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .become-column-offer {
+    width: 90%;
+    min-height: 22vw;
+    margin-right: 0;
+    margin-bottom: 4vw;
+  }  
+  .become-column-form {
+    width: 80%;
+    padding: 5vw;
+  }
+  .become-form__title {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 559px) {
@@ -732,6 +782,10 @@ html {
     margin-right: 20px;
     padding: 15px 0;
   }
+  .partner {
+    border-radius: 15px;
+    margin-bottom: 18vw;
+  }
   .partner-columns-wrap {
     flex-direction: column;
   }
@@ -758,5 +812,25 @@ html {
   .patner-image__icon1-image,
   .patner-image__icon2-image {
     width: 8.3vw;
+  }
+  .become-offer-title {
+    font-size: 32px;
+  }
+  .become-offer-text {
+    font-size: 20px;
+  }
+  .become-column-form {
+    width: 90%;
+    border-radius: 15px;
+  }
+  .become-form__title {
+    font-size: 18px;
+  }
+  .become-form__input-text, .become-form__textarea {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  .become-form__agreement-text {
+    font-size: 13px;
   }
 }
