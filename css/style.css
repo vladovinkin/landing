@@ -540,7 +540,9 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  /* border: 1px solid #FF7449; */
+}
+.border-error {
+  border: 1px solid #FF7449;
 }
 .become-form__input-text {
   margin-bottom: 14px;
@@ -575,6 +577,12 @@ html {
   line-height: 20px;
   text-align: center;
   gap: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 18px 0;
   cursor: pointer;
   border: 0;
   transition: all .3s;
@@ -585,14 +593,6 @@ html {
 }
 .become-form__submit-button:focus {
   box-shadow: 0px 0px 4px rgba(41, 160, 228, 0.9);
-}
-.submit-button__text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  color: #FFFFFF;
-  padding: 18px 0;
 }
 .footer {
   width: 100%;
