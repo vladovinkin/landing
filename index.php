@@ -240,16 +240,14 @@
                             </div>
                         </div>
                         <div class="become-column-form">
-                            <form class="become-form" action="">
+                            <form class="become-form" method="POST" id="form" action="">
                                 <div class="become-form__title">Company Information</div>
-                                <input type="text" id="company" class="become-form__input-text" placeholder="Company name ">
-                                <input type="text" id="phone" class="become-form__input-text" placeholder="Phone">
-                                <input type="email" id="email" class="become-form__input-text" placeholder="Email">
-                                <textarea name="brief" id="text" cols="20" rows="8" class="become-form__textarea" placeholder="Brief company description (years in business, eLearning experience, and why you want to be an iSpring partner)"></textarea>
+                                <input type="text" name="company" id="company" class="become-form__input-text" placeholder="Company name ">
+                                <input type="text" name="phone" id="phone" class="become-form__input-text" placeholder="Phone">
+                                <input type="email" name="email" id="email" class="become-form__input-text" placeholder="Email">
+                                <textarea name="text" name="text" id="text" cols="20" rows="8" class="become-form__textarea" placeholder="Brief company description (years in business, eLearning experience, and why you want to be an iSpring partner)"></textarea>
                                 <div class="become-form__agreement-text">By&nbsp;clicking &laquo;Become a&nbsp;Partner,&raquo; you confirm that you&rsquo;re agreeing to&nbsp;our <a href="#" title="Read Terms">Terms</a> and <a href="#" title="Read Privacy Policy">Privacy Policy</a>.</div>
-                                <button class="become-form__submit-button" id="submit">
-                                    <div class="submit-button__text">Become a Partner</div>
-                                </button>
+                                <input type="submit" id="submit" class="become-form__submit-button" value="Become a Partner"/>
                             </form>
                         </div>
                     </div>
@@ -279,5 +277,6 @@
             </footer>
         </div>
     </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
