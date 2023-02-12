@@ -10,8 +10,8 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="main_container">
-        <div class="sub_container">
+    <div class="container">
+        <div class="container-sub">
             <header class="header header__desktop">
                 <div class="header-main-line">
                     <div class="header-main-line__logo logo">
@@ -183,75 +183,77 @@
                     </nav>
                 </div>
             </header>
-            <div class="container container__wrap">
-                <div class="partner">
-                    <div class="partner-columns-wrap">
-                        <div class="partner-description-column">
-                            <div class="partner-description__wrap">
-                                <div class="partner-pre-header">
-                                    <span class="partner-pre-header__text">Partner Program</span>
+            <div class="main">
+                <section class="partner-container partner-container__wrap">
+                    <div class="partner">
+                        <div class="partner-columns-wrap">
+                            <div class="partner-description-column">
+                                <div class="partner-description__wrap">
+                                    <div class="partner-pre-header">
+                                        <span class="partner-pre-header__text">Partner Program</span>
+                                    </div>
+                                    <div class="partner-header">
+                                        <h1 class="partner-header__text">Grow your revenue with iSpring</h1>
+                                    </div>
+                                    <div class="partner-description">
+                                        <span class="partner-description__text">Offer your customers award-winning software for eLearning authoring and training management.</span>
+                                    </div>
+                                    <div class="partner-button partner-button__col-left">
+                                        <a href="#" class="default-button orange-rounded"><span class="partner-button__text">Become a Partner</span></a>
+                                    </div>
                                 </div>
-                                <div class="partner-header">
-                                    <h1 class="partner-header__text">Grow your revenue with iSpring</h1>
+                            </div>
+                            <div class="partner-picture-wrap">
+                                <div class="partner-picture image-mask">
+                                    <div class="partner-image">
+                                    </div>
                                 </div>
-                                <div class="partner-description">
-                                    <span class="partner-description__text">Offer your customers award-winning software for eLearning authoring and training management.</span>
+                                <div class="patner-image__icon1">
+                                    <div class="patner-image__icon1-mask">
+                                        <div class="patner-image__icon1-image"></div>
+                                    </div>
                                 </div>
-                                <div class="partner-button partner-button__col-left">
-                                    <a href="#" class="default-button orange-rounded"><span class="partner-button__text">Become a Partner</span></a>
+                                <div class="patner-image__icon2">
+                                    <div class="patner-image__icon2-mask">
+                                        <div class="patner-image__icon2-image"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="partner-picture-wrap">
-                            <div class="partner-picture image-mask">
-                                <div class="partner-image">
-                                </div>
-                            </div>
-                            <div class="patner-image__icon1">
-                                <div class="patner-image__icon1-mask">
-                                    <div class="patner-image__icon1-image"></div>
-                                </div>
-                            </div>
-                            <div class="patner-image__icon2">
-                                <div class="patner-image__icon2-mask">
-                                    <div class="patner-image__icon2-image"></div>
-                                </div>
+                        <div class="partner-button-wrap">
+                            <div class="partner-button">
+                                <a href="#" class="default-button orange-rounded"><span class="partner-button__text">Become a Partner</span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="partner-button-wrap">
-                        <div class="partner-button">
-                            <a href="#" class="default-button orange-rounded"><span class="partner-button__text">Become a Partner</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="become">
-                <div class="become-columns">
-                    <div class="become-column-offer">
-                        <div class="become-offer-wrap">
-                            <div class="become-offer-title">
-                                Become an iSpring Partner
-                            </div>
-                            <div class="become-offer-text">
-                                Tell us about yourself and your company.
+                </section>
+                <section class="become">
+                    <div class="become-columns">
+                        <div class="become-column-offer">
+                            <div class="become-offer-wrap">
+                                <div class="become-offer-title">
+                                    Become an iSpring Partner
+                                </div>
+                                <div class="become-offer-text">
+                                    Tell us about yourself and your company.
+                                </div>
                             </div>
                         </div>
+                        <div class="become-column-form">
+                            <form class="become-form" action="">
+                                <div class="become-form__title">Company Information</div>
+                                <input type="text" id="company" class="become-form__input-text" placeholder="Company name ">
+                                <input type="text" id="phone" class="become-form__input-text" placeholder="Phone">
+                                <input type="email" id="email" class="become-form__input-text" placeholder="Email">
+                                <textarea name="brief" id="text" cols="20" rows="8" class="become-form__textarea" placeholder="Brief company description (years in business, eLearning experience, and why you want to be an iSpring partner)"></textarea>
+                                <div class="become-form__agreement-text">By clicking "Become a Partner," you confirm that you're agreeing to our <a href="#" title="Read Terms">Terms</a> and <a href="#" title="Read Privacy Policy">Privacy Policy</a>.</div>
+                                <button class="become-form__submit-button" id="submit">
+                                    <div class="submit-button__text">Become a Partner</div>
+                                </button>
+                            </form>
+                        </div>
                     </div>
-                    <div class="become-column-form">
-                        <form class="become-form" action="">
-                            <div class="become-form__title">Company Information</div>
-                            <input type="text" id="company" class="become-form__input-text" placeholder="Company name ">
-                            <input type="text" id="phone" class="become-form__input-text" placeholder="Phone">
-                            <input type="email" id="email" class="become-form__input-text" placeholder="Email">
-                            <textarea name="brief" id="text" cols="20" rows="8" class="become-form__textarea" placeholder="Brief company description (years in business, eLearning experience, and why you want to be an iSpring partner)"></textarea>
-                            <div class="become-form__agreement-text">By clicking "Become a Partner," you confirm that you're agreeing to our <a href="#" title="Read Terms">Terms</a> and <a href="#" title="Read Privacy Policy">Privacy Policy</a>.</div>
-                            <button class="become-form__submit-button" id="submit">
-                                <div class="submit-button__text">Become a Partner</div>
-                            </button>
-                        </form>
-                    </div>
-                </div>
+                </section>
             </div>
         </div>
     </div>
