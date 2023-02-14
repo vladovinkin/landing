@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>iSpring :: Grow your revenue with iSpring</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -227,7 +234,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="become">
+                <div class="become">
                     <div class="become-columns">
                         <div class="become-column-offer">
                             <div class="become-offer-wrap">
@@ -240,20 +247,19 @@
                             </div>
                         </div>
                         <div class="become-column-form">
-                            <form class="become-form" action="">
+                            <form class="become-form" method="POST" id="form" action="/">
                                 <div class="become-form__title">Company Information</div>
-                                <input type="text" id="company" class="become-form__input-text" placeholder="Company name ">
-                                <input type="text" id="phone" class="become-form__input-text" placeholder="Phone">
-                                <input type="email" id="email" class="become-form__input-text" placeholder="Email">
-                                <textarea name="brief" id="text" cols="20" rows="8" class="become-form__textarea" placeholder="Brief company description (years in business, eLearning experience, and why you want to be an iSpring partner)"></textarea>
+                                <input type="text" name="company" id="company" class="become-form__input-text" placeholder="Company name ">
+                                <input type="text" name="phone" id="phone" class="become-form__input-text" placeholder="Phone">
+                                <input type="email" name="email" id="email" class="become-form__input-text" placeholder="Email">
+                                <textarea name="text" id="text" cols="20" rows="8" class="become-form__textarea" placeholder="Brief company description (years in business, eLearning experience, and why you want to be an iSpring partner)"></textarea>
+                                <div class="become-form__message" id="form-message"> </div>
                                 <div class="become-form__agreement-text">By&nbsp;clicking &laquo;Become a&nbsp;Partner,&raquo; you confirm that you&rsquo;re agreeing to&nbsp;our <a href="#" title="Read Terms">Terms</a> and <a href="#" title="Read Privacy Policy">Privacy Policy</a>.</div>
-                                <button class="become-form__submit-button" id="submit">
-                                    <div class="submit-button__text">Become a Partner</div>
-                                </button>
+                                <input type="submit" id="submit" class="become-form__submit-button" value="Become a Partner"/>
                             </form>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
             <footer class="footer">
                 <div class="footer__columns">
@@ -270,7 +276,7 @@
                     <div class="column-subscribe">
                         <div class="column-subscribe__title">Subscribe to&nbsp;our newsletters</div>
                         <div class="column-subscribe__description">By&nbsp;clicking &laquo;Subscribe&raquo;, you agree to&nbsp;our Privacy Policy. All emails include an&nbsp;unsubscribe link, so&nbsp;you can opt-out at&nbsp;any time.</div>
-                        <form class="column-subscribe__form" action="">
+                        <form class="column-subscribe__form" action="/">
                             <input type="email" class="email-subscribe" id="email_subscribe" placeholder="Email">
                             <input type="submit" class="submit-subscribe" id="submit_subscribe" value="Subscribe">
                         </form>
@@ -279,5 +285,6 @@
             </footer>
         </div>
     </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
