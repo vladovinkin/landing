@@ -227,7 +227,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="become">
+                <div class="become">
                     <div class="become-columns">
                         <div class="become-column-offer">
                             <div class="become-offer-wrap">
@@ -240,18 +240,18 @@
                             </div>
                         </div>
                         <div class="become-column-form">
-                            <form class="become-form" method="POST" id="form" action="">
+                            <form class="become-form" method="POST" id="form" action="/">
                                 <div class="become-form__title">Company Information</div>
                                 <input type="text" name="company" id="company" class="become-form__input-text" placeholder="Company name ">
                                 <input type="text" name="phone" id="phone" class="become-form__input-text" placeholder="Phone">
                                 <input type="email" name="email" id="email" class="become-form__input-text" placeholder="Email">
-                                <textarea name="text" name="text" id="text" cols="20" rows="8" class="become-form__textarea" placeholder="Brief company description (years in business, eLearning experience, and why you want to be an iSpring partner)"></textarea>
+                                <textarea name="text" id="text" cols="20" rows="8" class="become-form__textarea" placeholder="Brief company description (years in business, eLearning experience, and why you want to be an iSpring partner)"></textarea>
                                 <div class="become-form__agreement-text">By&nbsp;clicking &laquo;Become a&nbsp;Partner,&raquo; you confirm that you&rsquo;re agreeing to&nbsp;our <a href="#" title="Read Terms">Terms</a> and <a href="#" title="Read Privacy Policy">Privacy Policy</a>.</div>
                                 <input type="submit" id="submit" class="become-form__submit-button" value="Become a Partner"/>
                             </form>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
             <footer class="footer">
                 <div class="footer__columns">
@@ -268,7 +268,7 @@
                     <div class="column-subscribe">
                         <div class="column-subscribe__title">Subscribe to&nbsp;our newsletters</div>
                         <div class="column-subscribe__description">By&nbsp;clicking &laquo;Subscribe&raquo;, you agree to&nbsp;our Privacy Policy. All emails include an&nbsp;unsubscribe link, so&nbsp;you can opt-out at&nbsp;any time.</div>
-                        <form class="column-subscribe__form" action="">
+                        <form class="column-subscribe__form" action="/">
                             <input type="email" class="email-subscribe" id="email_subscribe" placeholder="Email">
                             <input type="submit" class="submit-subscribe" id="submit_subscribe" value="Subscribe">
                         </form>
