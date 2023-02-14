@@ -93,7 +93,7 @@
                             } else {
                                 // иначе - сообщение об ошибке
                                 ?>
-                                <span>ОШИБКА: Информация по <?= $data['email'] ?> отсутствует</span>
+                                <span class="error-message">ОШИБКА: Информация по <?= $data['email'] ?> отсутствует</span>
                                 <?php
                             }
 
@@ -104,10 +104,10 @@
                 } else {
                     ?>
                     <div class="column">
-                        <span class="title">Data infoing</span>
-                        <form method="POST" action="">
-                            <input name="email" type="text" placeholder="E-mail"/><br>
-                            <input type="submit" value="Info data"/>
+                        <div class="table-title"><span class="table-title-text">Check info by email</span></div>
+                        <form method="POST" id="form" action="/info.php">
+                            <input name="email" type="email" id="email" class="check-email-input" placeholder="E-mail"/><br>
+                            <input type="submit" id="submit" class="info-button button-green" value="Info data"/>
                         </form>
                     </div>
                     <?php
@@ -121,5 +121,6 @@
                 <?php } ?>
         </div>
     </div>
+    <script src="./js/info.js"></script>
 </body>
 </html>
