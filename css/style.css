@@ -48,6 +48,68 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/open-sans.eot');
+  src: url('../fonts/open-sans.eot?#iefix') format('embedded-opentype'),
+    url("../fonts/open-sans.otf") format("opentype"),
+		url("../fonts/open-sans.svg") format("svg"),
+    url('../fonts/open-sans.woff2') format('woff2'),
+    url('../fonts/open-sans.woff') format('woff'),
+    url('../fonts/open-sans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/open-sans-extrabold.eot");
+	src: url("../fonts/open-sans-extrabold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/open-sans-extrabold.otf") format("opentype"),
+		url("../fonts/open-sans-extrabold.svg") format("svg"),
+		url("../fonts/open-sans-extrabold.ttf") format("truetype"),
+		url("../fonts/open-sans-extrabold.woff") format("woff"),
+		url("../fonts/open-sans-extrabold.woff2") format("woff2");
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/open-sans-bold.eot");
+	src: url("../fonts/open-sans-bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/open-sans-bold.otf") format("opentype"),
+		url("../fonts/open-sans-bold.svg") format("svg"),
+		url("../fonts/open-sans-bold.ttf") format("truetype"),
+		url("../fonts/open-sans-bold.woff") format("woff"),
+		url("../fonts/open-sans-bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/open-sans-semibold.eot");
+	src: url("../fonts/open-sans-semibold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/open-sans-semibold.otf") format("opentype"),
+		url("../fonts/open-sans-semibold.svg") format("svg"),
+		url("../fonts/open-sans-semibold.ttf") format("truetype"),
+		url("../fonts/open-sans-semibold.woff") format("woff"),
+		url("../fonts/open-sans-semibold.woff2") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/open-sans-light.eot");
+	src: url("../fonts/open-sans-light.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/open-sans-light.otf") format("opentype"),
+		url("../fonts/open-sans-light.svg") format("svg"),
+		url("../fonts/open-sans-light.ttf") format("truetype"),
+		url("../fonts/open-sans-light.woff") format("woff"),
+		url("../fonts/open-sans-light.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+}
 html {
   background-color: #FFFFFF;
   font-size: 16px;
@@ -691,6 +753,130 @@ html {
   cursor: pointer;
 }
 .submit-subscribe:focus {
+  box-shadow: 0px 0px 4px rgba(41, 160, 228, 0.9);
+}
+.info-container {
+  width: 100%;
+  text-align: center;
+  text-align: -webkit-center;
+}
+.info-container-tables {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+.info-container-tables > div {
+  margin-bottom: 50px;
+}
+.table-title {
+  margin-bottom: 10px;
+}
+.table-title-text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+.info-container-tables table {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 10px;
+  border-spacing: 0;
+  text-align: center;
+}
+.info-container-tables th {
+  color: white;
+  text-shadow: 0 1px 1px #2D2020;
+  padding: 10px 20px;
+}
+.table-company th {
+  background-color: #3D50F9;
+}
+.table-briefs th {
+  background-color: #442400;
+}
+.info-container-tables th,
+.info-container-tables td {
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: white;
+}
+.info-container-tables th:first-child,
+.info-container-tables td:first-child {
+  text-align: left;
+}
+.info-container-tables th:first-child {
+  border-top-left-radius: 10px;
+}
+.info-container-tables th:last-child {
+  border-top-right-radius: 10px;
+  border-right: none;
+}
+.info-container-tables td {
+  padding: 10px 20px;
+}
+.table-company td {
+  background: #DDDDDD;
+}
+.table-briefs td {
+  background: #FFF6BA;
+}
+.info-container-tables tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
+}
+.info-container-tables tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+}
+.info-container-tables tr td:last-child {
+  border-right: none;
+}
+.info-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.info-button {
+  width: 144px;
+  padding: 8px 24px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 3px;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+}
+.button-brown {
+  margin-left: 30px;
+}
+.button-blue {
+  color: #FFFFFF;
+  background: #3D50F9;
+  transition: all .3s;
+}
+.button-blue:hover {
+  background: #2B38AD;
+  cursor: pointer;
+}
+.button-blue:focus {
+  box-shadow: 0px 0px 4px rgba(41, 160, 228, 0.9);
+}
+.button-brown {
+  color: #FFFFFF;
+  background: #653702;
+  transition: all .3s;
+  box-shadow: 0px 0px 4px #BEBEBE;
+}
+.button-brown:hover {
+  background: #442400;
+  cursor: pointer;
+}
+.button-brown:focus {
   box-shadow: 0px 0px 4px rgba(41, 160, 228, 0.9);
 }
 @media screen and (max-width: 1250px) {

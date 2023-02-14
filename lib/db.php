@@ -8,7 +8,8 @@ function getConnect(): PDO {
 
     $db_host = "localhost"; 
     $db_user = "root";
-    $db_password = "qAz321_mKL";
+    // $db_password = "qAz321_mKL";
+    $db_password = "root";
     $db_base = 'form-send';
     $db_charset = 'utf8'; 
 
