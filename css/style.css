@@ -603,9 +603,6 @@ html {
   font-size: 16px;
   line-height: 24px;
 }
-.border-error {
-  border: 1px solid #FF7449;
-}
 .become-form__input-text {
   margin-bottom: 14px;
 }
@@ -824,6 +821,9 @@ html {
 .table-briefs td {
   background: #FFF6BA;
 }
+.table-briefs tbody tr:first-child td {
+  background-color: #b6ff95;
+}
 .info-container-tables tr:last-child td:first-child {
   border-radius: 0 0 0 10px;
 }
@@ -839,8 +839,6 @@ html {
   margin-bottom: 30px;
 }
 .info-button {
-  width: 144px;
-  padding: 8px 24px;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 500;
@@ -852,21 +850,8 @@ html {
   text-decoration: none;
 }
 .button-brown {
+  padding: 8px 24px;
   margin-left: 30px;
-}
-.button-blue {
-  color: #FFFFFF;
-  background: #3D50F9;
-  transition: all .3s;
-}
-.button-blue:hover {
-  background: #2B38AD;
-  cursor: pointer;
-}
-.button-blue:focus {
-  box-shadow: 0px 0px 4px rgba(41, 160, 228, 0.9);
-}
-.button-brown {
   color: #FFFFFF;
   background: #653702;
   transition: all .3s;
@@ -878,6 +863,55 @@ html {
 }
 .button-brown:focus {
   box-shadow: 0px 0px 4px rgba(41, 160, 228, 0.9);
+}
+.button-blue {
+  padding: 8px 24px;
+  color: #FFFFFF;
+  background: #3D50F9;
+  transition: all .3s;
+}
+.button-blue:hover {
+  background: #2B38AD;
+  cursor: pointer;
+}
+.button-blue:focus {
+  box-shadow: 0px 0px 4px rgba(41, 160, 228, 0.9);
+}
+.check-email-input {
+  padding: 10px 19px;
+  margin-bottom: 10px;
+  background: #FFFFFF;
+  border: 1px solid #ABB0BA;
+  border-radius: 4px;
+  outline: 0;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.button-green {
+  padding: 10px 50px;
+  color: #FFFFFF;
+  background: #257500;
+  transition: all .3s;
+}
+.button-green:hover {
+  background: #164400;
+  cursor: pointer;
+}
+.button-green:focus {
+  box-shadow: 0px 0px 4px #5EB101;
+}
+.border-error {
+  border: 1px solid #FF7449;
+}
+.error-message {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #FF0000;
 }
 @media screen and (max-width: 1250px) {
   .partner-container {
